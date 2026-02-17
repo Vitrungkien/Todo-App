@@ -1,0 +1,21 @@
+-- -- Sample data for Todo List Application (Oracle)
+-- -- Password cho tất cả các user là: password123
+--
+-- INSERT INTO users (id, username, email, password, full_name, created_at, updated_at)
+-- VALUES (user_seq.NEXTVAL, 'admin', 'admin@todoapp.com',
+--         '$2a$10$8.uBo5CUSrqiXnUXebS8FuVbO1Nf.I1J/Y.E9hNoT20b3sE.4sV5G',
+--         'Admin User', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+--
+-- INSERT INTO users (id, username, email, password, full_name, created_at, updated_at)
+-- VALUES (user_seq.NEXTVAL, 'johndoe', 'john.doe@example.com',
+--         '$2a$10$8.uBo5CUSrqiXnUXebS8FuVbO1Nf.I1J/Y.E9hNoT20b3sE.4sV5G',
+--         'John Doe', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+--
+-- -- Thêm vài task mẫu cho admin
+-- INSERT INTO todos (id, title, description, deadline, completed, user_id, created_at, updated_at)
+-- VALUES (todo_seq.NEXTVAL, 'Khởi chạy ứng dụng Todo', 'Đã kết nối thành công tới Oracle Database', SYSDATE, 0, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+--
+-- INSERT INTO todos (id, title, description, deadline, completed, user_id, created_at, updated_at)
+-- VALUES (todo_seq.NEXTVAL, 'Kiểm tra tính năng Todo', 'Thêm, sửa, xóa các công việc hàng ngày', SYSDATE + 1, 0, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+--
+-- COMMIT;
