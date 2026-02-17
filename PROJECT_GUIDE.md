@@ -5,22 +5,17 @@
 ```
 todo/
 ├── src/main/java/com/work/todo/
-│   ├── config/              # Cấu hình ứng dụng (Security, MVC, Bean)
-│   ├── controller/          # Xử lý HTTP request (API & View)
-│   ├── dto/                 # Data Transfer Objects (Request/Response)
-│   ├── entity/              # Mô hình dữ liệu (JPA Entities)
-│   ├── repository/          # Tương tác Database (JPA Repositories)
-│   ├── security/            # Xác thực & Phân quyền (JWT, UserDetails)
-│   └── service/             # Logic nghiệp vụ (Business Logic)
-│   └── TodoApplication.java # Entry Point chính
+│   ├── ... (Java packages)
 ├── src/main/resources/
-│   ├── static/              # Tài nguyên tĩnh (CSS, JS, Images)
-│   ├── templates/           # Giao diện HTML (Thymeleaf)
-│   ├── application.yml      # Cấu hình môi trường (DB, JWT, Port)
-│   ├── schema.sql           # Script khởi tạo DB (DDL)
-│   └── data.sql             # Script khởi tạo dữ liệu mẫu (DML)
-├── pom.xml                  # Quản lý dependencies (Maven)
-└── compose.yaml             # Cấu hình Docker (Oracle DB)
+│   ├── static/              
+│   │   ├── css/             # Styles (style.css)
+│   │   ├── js/              # Scripts (config.js, utils.js, api.js, dashboard.js)
+│   │   └── images/
+│   ├── templates/           # Giao diện HTML (dashboard.html, login.html...)
+│   ├── application.yml      
+│   └── schema.sql           
+├── pom.xml                  
+└── compose.yaml             
 ```
 
 ## 2. Chức năng chính của từng thư mục
